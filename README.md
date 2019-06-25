@@ -1,0 +1,1 @@
+# kabeta_school
