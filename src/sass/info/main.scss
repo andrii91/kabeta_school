@@ -164,6 +164,11 @@ font-weight: 700;
 .header-location {
   margin-top: 3.906vw;
   display: block;
+  &:hover {
+    svg {
+transform: scale(.9);
+    }
+  }
   svg {
     width: 29px;
     height: 29px;
@@ -174,6 +179,7 @@ font-weight: 700;
     display: inline-block;
     vertical-align: middle;
     margin-right: 14px;
+    transition: .3s;
   }
   color: #ffffff;
   font-family: "TT Commons";
@@ -371,4 +377,819 @@ font-weight: 400;
     color: #65c9d2;
     transform: translateY(5%);
   }
+}
+
+.new_scholl {
+  padding-top: 7.760vw;
+  padding-bottom: 10.677vw;
+  .h2-title {
+    margin-bottom: 40px;
+  }
+  .h2-subtitle {
+    margin-bottom: 15px;
+  }
+}
+
+.new_scholl-item {
+  margin-top: 3.125vw;
+  text-align: center;
+  .img {
+    margin-bottom: 10px;
+  }
+  p {
+    color: #3f517c;
+    font-family: "TT Commons";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    b {
+      font-family: "TT Commons - Demi Bold";
+    }
+  }
+}
+
+.teach-img {
+  img {
+    float: right;
+  }
+}
+
+.teach {
+  background-image: linear-gradient(to right, #7699e9 0%, #6e8fdb 100%);
+  padding-top: 7.813vw;
+  .h2-title {
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.teach-item {
+  img {
+    max-height: 59px;
+  }
+  margin-bottom: 3.646vw;
+  p {
+    color: #ffffff;
+    font-family: "TT Commons";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+
+.methods {
+  padding-top: 11.510vw;
+  padding-bottom: 7.292vw;
+  .mission-list {
+    li {
+      margin-bottom: 50px;
+    }
+  }
+  .registration-btn {
+    margin-left: 47px;
+  }
+  .h2-title {
+    margin-bottom: 75px;
+  }
+}
+
+.methods-button {
+  div {
+    cursor: pointer;
+    width: 67px;
+    height: 67px;
+    border: 1px solid #65c9d2;
+    padding: 29px;
+    transition: .2s;
+    &:hover {
+      background: #65c9d2;
+    }
+    svg {
+      width: 6px;
+      height: 8px;
+      display: inherit;
+    }
+  }
+  .methods-next {
+    margin-left: 67px;
+  }
+}
+.team-button {
+  div {
+    cursor: pointer;
+    width: 67px;
+    height: 67px;
+    border: 1px solid #65c9d2;
+    padding: 29px;
+    transition: .2s;
+    &:hover {
+      background: #65c9d2;
+    }
+    svg {
+      width: 6px;
+      height: 8px;
+      display: inherit;
+    }
+  }
+  .team-next {
+    margin-left: 67px;
+  }
+}
+
+.methods-carousel {
+  max-width: 389px;
+  .item {
+    padding-right: 40px;
+    position: relative;
+  }
+}
+
+.methods-vertical {
+    display: block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    position: absolute;
+    width: 273px;
+    transform-origin: right;
+    top: 251px;
+    right: 30px;
+    height: 56px;
+  color: #3f517c;
+font-family: "TT Commons";
+font-size: 15px;
+font-weight: 400;
+text-transform: uppercase;
+/* Text style for "Методологи" */
+letter-spacing: 1.2px;
+}
+
+.methods-item {
+  .img {
+    margin-bottom: 40px;
+  }
+line-height: 1.2;
+  .name {
+    font-family: "TT Commons - Demi Bold";
+    font-weight: 600;
+    
+  }
+  .posts {
+    color: #b2bbd1;
+    font-family: "TT Commons";
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  p {
+      color: #3f517c;
+font-family: "TT Commons";
+font-size: 20px;
+font-weight: 400;
+  }
+  .methods-content {
+//    height: 275px;
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+    transition: .3s;
+   /* &.active {
+      height: 100%;
+    }*/
+    p>span {
+      display: none;
+    }
+  }
+
+}
+
+.methods-more {
+  margin-top: 15px;
+  color: #65c9d2;
+font-family: "TT Commons";
+font-size: 18px;
+font-weight: 700;
+  cursor: pointer;
+}
+
+.methods-left {
+  position: relative;
+  height: 100%;
+  
+}
+* {
+  -moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;      
+}
+
+.methods-pos {
+  color: #b2bbd1;
+font-family: "TT Commons";
+font-size: 16px;
+font-weight: 400;
+  position: absolute;
+  top: 489px;
+  left: 12px;
+  text-align: center;
+  
+  .methods-cur {
+    color: #3f517c;
+    
+  }
+  div {
+    display: inline-block;
+    margin: 1px;
+  }
+}
+.team-pos {
+  color: #b2bbd1;
+font-family: "TT Commons";
+font-size: 16px;
+font-weight: 400;
+  position: absolute;
+  top: 375px;
+  left: 12px;
+  text-align: center;
+  
+  .team-cur {
+    color: #3f517c;
+    
+  }
+  div {
+    display: inline-block;
+    margin: 1px;
+  }
+}
+
+.location {
+  padding: 125px 0;
+  background-color: #eefeff;
+}
+
+.location-item {
+  .top {
+    color: #65c9d2;
+    font-family: "TT Commons";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26.76px;
+    text-transform: uppercase;
+    letter-spacing: 0.97px;
+    margin-bottom: 40px;
+  }
+  .h2-title {
+    margin-bottom: 40px;
+  }
+  p {
+    color: #3f517c;
+    font-family: "TT Commons - Demi Bold";
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 42px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      color: #3f517c;
+      font-family: "TT Commons";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 25px;
+      svg {
+        display: inline-block;
+        vertical-align: top;
+        fill:#65c9d2;
+        margin-right: 20px;
+      }
+      span {
+        width: calc(100% - 47px);
+        max-width: 280px;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.location-img {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  &:before {
+    content: "";
+    background: url('../images/2132.png') no-repeat center;
+    width: 627px;
+    height: 627px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-53%) translateY(-50%);
+    z-index: 0;
+  }
+  img {
+    position: relative;
+    z-index: 1;
+  }
+  a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -76px;
+    color: #ffffff;
+    font-family: "TT Commons";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 160px;
+    height: 160px;
+    background-color: #65c9d2;
+    border-radius: 50%;
+    z-index: 5;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      transform: translateY(-50%) scale(.9);
+    }
+  }
+}
+
+.team-carousel {
+  width: 85vw;
+}
+
+main {
+  overflow: hidden;
+}
+
+.team {
+  padding: 150px 0 90px;
+  .h2-title {
+    margin-bottom: 50px;
+  }
+  .h2-subtitle {
+    margin-bottom: 70px;
+  }
+}
+
+.team-item {
+  padding-right: 3.646vw;
+  .photo {
+    margin-bottom: 50px;
+  }
+color: #3f517c;
+font-family: "TT Commons";
+font-size: 20px;
+font-weight: 400;
+  .post {
+    color: #b2bbd1;
+font-family: "TT Commons";
+font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .name {
+    font-family: "TT Commons - Demi Bold";
+  font-weight: 600;
+  }
+  .more {
+    display: none;
+  }
+}
+
+.team-more {
+  margin-top: 20px;
+  color: #65c9d2;
+font-family: "TT Commons";
+font-size: 18px;
+font-weight: 700;
+}
+
+.schedule-table {
+  width: 100%;
+  tr {
+    th {
+      background-color: #3f517c;
+      padding: 39px 0;
+      color: #ffffff;
+      font-family: "TT Commons";
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1;
+      &:first-child {
+        padding-left: 65px;
+        width: 423px;
+      }
+    }
+    &:nth-child(odd) {
+      td {
+        background-color: #eefeff;
+      }
+      
+      }
+    td {
+      padding: 38px 0;
+      vertical-align: top;
+      color: #3f517c;
+      font-family: "TT Commons - Demi Bold";
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 1;
+      
+      &:first-child {
+        padding-left: 65px;
+        svg {
+          fill: #65c9d2;
+          width: 16px;
+          height: 16px;
+          margin-right: 16px;
+          display: inline-block;
+          vertical-align: top;
+        }
+        
+        color: #3f517c;
+        font-family: "TT Commons";
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 1;
+        span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.schedule {
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+
+.steps {
+  padding: 150px 0;
+  background-color: #7699e9;
+  text-align: center;
+  .h2-title {
+    color: #fff;
+    margin-bottom: 94px;
+  }
+}
+
+.steps-item {
+  &.hover {
+    img {
+      transition: .3s;
+      cursor: pointer;
+    }
+    &:hover  {
+      img {
+        transform: scale(.9);
+      }
+    }
+  }
+  .img {
+    position: relative;
+    &:before {
+      content: "";
+      background: url('../images/12e23rsss.png') no-repeat center;
+      width: 361px;
+      height: 361px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 0;
+    }
+    img {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  p {
+    position: relative;z-index: 1;
+    margin-top: 40px;
+    color: #ffffff;
+    font-family: "TT Commons";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    b {
+      font-family: "TT Commons - Demi Bold";
+    }
+  }
+}
+
+.price {
+  padding: 150px 0;
+  background-color: #f0fafa;
+  .h2-title {
+    margin-bottom: 45px;
+  }
+}
+
+.price-item {
+  margin-top: 65px;
+  background: #fff;
+  border-top: 2px solid #65c9d2;
+  padding: 75px 84px;
+  max-width: 634px;
+  .col-xl-2 {
+    padding: 0;
+    text-align: left;
+  }
+  .row {
+    &:first-child {
+      margin-bottom: 40px;
+    }
+  }
+  span {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    background-color: #3f517c;
+    border-radius: 50%;
+    padding: 23px;
+//    float: right;
+  }
+  svg {
+    fill: #fff;
+  }
+  .text {
+    color: #65c9d2;
+    font-family: "TT Commons - Demi Bold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .summ {
+    color: #3f517c;
+    font-family: "TT Commons";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 44.07px;
+  }
+  p {
+    color: #b2bbd1;
+    font-family: "TT Commons";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+}
+
+.price-item_right {
+  max-width: 436px;
+  margin-left: auto;
+  margin-top: 65px;
+  position: relative;
+  &:after {
+    content: "";
+    background: url('../images/32ef3.png') no-repeat center;
+    width: 587px;
+    height: 587px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+  }
+  .content {
+    background: #fff;
+  border-top: 2px solid #65c9d2;
+    padding: 77px 86px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+    .top {
+      color: #65c9d2;
+      font-family: "TT Commons";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+      letter-spacing: 0.32px;
+    }
+    .summ {
+      span {
+        color: #65c9d2;
+        display: block;
+      }
+      font-family: "TT Commons";
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 44.93px;
+      color: #3f517c;
+      margin-bottom: 30px;
+    }
+    p {
+      color: #3f517c;
+      font-family: "TT Commons";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+  }
+
+  
+}
+
+.about {
+  padding: 112px 0 150px;
+}
+
+.about-item {
+  .top {
+    color: #65c9d2;
+    font-family: "TT Commons";
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.96px;
+    margin-bottom: 50px;
+    line-height: 1;
+  }
+  .h2-title {
+    margin-bottom: 50px;
+  }
+}
+
+.about-content {
+  .img {
+    width: 30px;
+    height: 30px;
+    background-color: #65c9d2;
+    border-radius: 50%;
+    padding: 9px;
+    margin-bottom: 25px;
+    svg {
+      fill: #fff;
+      display: inherit;
+    }
+  }
+  p {
+    color: #3f517c;
+    font-family: "TT Commons";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 35px;
+  }
+}
+
+.about-img {
+  img {
+    margin-left: -75px;
+  }
+}
+
+.registration {
+  padding: 78px 126px 120px;
+  background-color: #eefeff;
+  margin-top: 45px;
+  text-align: center;
+  span {
+    position: relative;
+    margin-right: 20px;
+    display: inline-block;
+    svg {
+      width: 18px;
+    }
+    .allert {
+      position: absolute;
+      top: 18px;
+      right: 15px;
+      p {
+        display: none;
+      }
+      
+    }
+  }
+  .title {
+    color: #3f517c;
+    font-family: "TT Commons";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #3f517c;
+    font-family: "TT Commons";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+  form {
+    input {
+      border: 0;
+      max-width: 283px;
+      width: 100%;
+      background-color: #ffffff;
+      color: #c3d4d6;
+      font-family: "TT Commons";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1;
+      padding: 18.5px 28px;
+      
+    }
+    button {
+      padding: 19.5px 28px;
+      
+    }
+  }
+}
+input:focus::-webkit-input-placeholder {
+  font-size: 9px;
+  transform: translateY(-15px);
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out
+}
+
+
+.footer {
+  background-color: #3f517c;
+  padding: 30px 0 32px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    a {
+      display: block;
+      color: #778bbc;
+      font-family: "TT Commons";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1;
+    }
+  }
+}
+
+.rezart-logo {
+  float: right;
+  svg {
+    fill:#fff;
+    height: 20px;
+  }
+}
+
+.modal {
+  display: none;
+  padding: 5vw 3vw;
+  max-width: 480px;
+  background-color: #eefeff;
+  .registration {
+    padding: 0;
+    form {
+      input {
+        margin: 0 0 20px;
+        max-width: 100%;
+      }
+      span {
+        width: 100%;
+        margin: 0;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+  &.large {
+  background: #fff;
+    max-width: 768px;
+  }
+}
+* {
+    outline: 0 0;
+  &:focus {
+    outline: 0 0;
+  }
+}
+
+.mob-phone {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
 }

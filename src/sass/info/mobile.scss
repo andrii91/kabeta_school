@@ -1,3 +1,706 @@
 & {
-  
+  .xs-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  nav {
+    background-image: linear-gradient(to right, #7699e9 0, #6e8fdb 100%);
+    text-align: center;
+
+    .logo {
+      float: left;
+
+      img {
+        width: 65px;
+      }
+    }
+
+    .menu {
+      display: none;
+      text-align: center;
+
+      li {
+        display: block;
+        margin: 15px 0;
+
+        .phone {
+          display: none;
+        }
+      }
+    }
+
+    .mob-phone {
+      display: inline-block;
+      color: #fff;
+      font-family: "TT Commons";
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1;
+      transition: .2s;
+    }
+  }
+
+
+  #nav-icon {
+    width: 40px;
+    height: 25px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+
+
+  #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 50%;
+    background: #fff;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+
+  #nav-icon span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9px 9px 0;
+  }
+
+  #nav-icon span:nth-child(odd) {
+    left: 0px;
+    border-radius: 9px 0 0 9px;
+  }
+
+  #nav-icon span:nth-child(1),
+  #nav-icon span:nth-child(2) {
+    top: 0px;
+  }
+
+  #nav-icon span:nth-child(3),
+  #nav-icon span:nth-child(4) {
+    top: 10px;
+  }
+
+  #nav-icon span:nth-child(5),
+  #nav-icon span:nth-child(6) {
+    top: 20px;
+  }
+
+  #nav-icon.open span:nth-child(1),
+  #nav-icon.open span:nth-child(6) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #nav-icon.open span:nth-child(2),
+  #nav-icon.open span:nth-child(5) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  #nav-icon.open span:nth-child(1) {
+    left: 5px;
+    top: 7px;
+  }
+
+  #nav-icon.open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 7px;
+  }
+
+  #nav-icon.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+
+  #nav-icon.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+  }
+
+  #nav-icon.open span:nth-child(5) {
+    left: 5px;
+    top: 17px;
+  }
+
+  #nav-icon.open span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 17px;
+  }
+
+  #nav-icon {
+    float: right;
+  }
+
+  .header-item {
+    text-align: center;
+  }
+
+  .header-item .sub_title {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+
+  .header-item h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 40px 0px;
+  }
+
+  .header-item p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+    br {
+      display: none;
+    }
+  }
+
+  header {
+    .order-btn {
+      margin-bottom: 20px;
+    }
+  }
+
+  .fancybox-slide--iframe .fancybox-content {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: calc(100% - 88px);
+    overflow: visible;
+    background: #fff;
+  }
+
+  .header-location svg {
+    width: 29px;
+    height: 29px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    fill: #6e8fdb;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s;
+    margin-bottom: 15px;
+  }
+
+  .header-img {
+    float: none;
+    margin: 0;
+    margin-top: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .h2-title {
+    color: #3f517c;
+    font-family: "TT Commons";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 3.906vw !important;
+    text-align: center;
+  }
+
+  .comparison {
+    padding: 50px 0;
+  }
+
+  .h2-subtitle {
+    padding-left: 15px;
+    color: #3f517c;
+    font-family: "TT Commons";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    position: relative;
+  }
+
+  .comparison-img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .icon-sw {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+
+    &.inv {
+      &:before {
+        filter: invert(100%);
+      }
+    }
+
+    &:before {
+      content: "";
+      background: url('../svg/sw.svg') no-repeat center;
+      width: 30px;
+      height: 30px;
+      z-index: 3;
+      display: block !important;
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: center center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .tbl-container {
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+
+
+    table {
+      width: 850px;
+      background: #fff;
+
+      th {
+        color: #fff;
+        font-family: "TT Commons";
+        font-size: 21px;
+        font-weight: 700;
+        padding: 15px 0 15px 20px;
+        background-color: #3f517c;
+
+        &:first-child {
+          width: 215px;
+        }
+      }
+
+      td {
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #3f517c;
+        font-family: "TT Commons";
+        font-size: 15px;
+        font-weight: 400;
+        vertical-align: top;
+        line-height: 1.2;
+
+        span {
+          width: calc(100% - 55px);
+        }
+
+        &:nth-child(2) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .mission {
+    padding-top: 50px;
+  }
+
+  .mission-item p {
+    margin-top: 18px;
+    color: #3f517c;
+    font-family: "TT Commons - Demi Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 17px;
+  }
+
+  .registration-btn {
+    width: 100%;
+    text-align: center;
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .mission-img img {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .new_scholl-item {
+    img {
+      width: 100%;
+    }
+  }
+
+  .new_scholl {
+    padding: 50px 0;
+  }
+
+  .new_scholl-item p {
+    margin-bottom: 30px;
+  }
+
+  .new_scholl-item .img {
+    margin-bottom: -10px;
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+
+    button {
+      height: 16px;
+      width: 16px;
+
+      svg {
+        fill: #fff;
+      }
+
+      &.owl-next {
+        float: right;
+      }
+
+      &.owl-prev {
+        float: left;
+      }
+    }
+
+  }
+
+  .teach-mob_carousel {
+    margin-top: 50px;
+    position: relative;
+
+  }
+  .methods-carousel, .team-carousel   {
+    br {
+      display: none;
+    }
+      .owl-dots {
+
+    .owl-dot {
+
+      &.active {
+        border: 1px solid #65c9d2;
+      }
+
+      span {
+     
+        background: #65c9d2;
+      }
+    }
+  }
+
+  }
+
+  .owl-dots {
+    text-align: center;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+
+    .owl-dot {
+      width: 35px;
+      height: 35px;
+      background-color: transparent;
+      border: 0;
+      position: relative;
+      padding: 12.5px;
+      display: inline-block;
+      margin: 5px;
+
+      &.active {
+        border: 1px solid #fff;
+      }
+
+      span {
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        display: inline-block;
+      }
+    }
+  }
+
+  .order-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .order-2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .order-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .order-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .order-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  .order-6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  .teach-img {
+    float: none;
+    margin-top: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .methods .registration-btn {
+    margin-left: auto;
+  }
+  .methods .mission-list li {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+  .methods-pos {
+    display: none;
+  }
+  .methods-left {
+    margin-top: 30px;
+        z-index: 4545;
+  }
+  .methods-button {
+    div {
+      display: inline-block;
+    }
+    .methods-next {
+      float: right;
+    }
+    .methods-prev {
+      float: left;
+    }
+  }
+  .methods-item p, .team-item p {
+    color: #3f517c;
+    font-family: "TT Commons";
+    font-size: 14px;
+    font-weight: 400;
+}
+  .location, .team {
+    padding: 50px 0;
+  }
+  .location-item .top {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+  .location-item ul li {
+    font-size: 14px;
+  }
+  .location-item p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .location-img img {
+    width: 100%;
+  }
+  .location-img:before {
+    content: "";
+    background: url(../images/2132.png) no-repeat center;
+    width: 327px;
+    height: 327px;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-53%) translateY(-50%);
+    z-index: 0;
+}
+  .location-img a {
+    left: 50%;
+  }
+  .h2-subtitle {
+    br {
+      display: none;
+    }
+  }
+  .team {
+    .h2-subtitle {
+      margin-bottom: 20px;
+    }
+  }
+  .team-item {
+    padding: 0;
+  }
+  .team-button, .team-pos {
+    display: none;
+  }
+  .team-left {
+    padding-top: 60px;
+  }
+  .team-carousel {
+    width: 100%;
+  }
+  .team-item .photo {
+    margin-bottom: 15px;
+  }
+  .schedule {
+    padding: 50px 0;
+  }
+  .schedule-table tr th:first-child {
+    padding-left: 25px;
+  }
+  .schedule-table tr td:first-child {
+    padding-left: 25px;
+    color: #3f517c;
+    font-family: "TT Commons";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+   .tbl-container table.schedule-table {
+    width: 520px;
+  }
+  .steps {
+    padding: 50px 0;
+  }
+  .steps .h2-title {
+    position: relative;
+    z-index: 3;
+  }
+  .steps-item .img img {
+    max-width: 140px;
+    
+  }
+  .steps-item p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+  .price {
+    padding: 50px 0;
+  }
+  .price-item {
+    margin-top: 25px;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+  }
+  .price-item .col-xl-2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .price-item .text {
+    font-size: 12px;
+  }
+  .price-item .summ {
+      color: #3f517c;
+      font-family: "TT Commons";
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+  }
+  .price-item p {
+    color: #b2bbd1;
+    font-family: "TT Commons";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .4px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+  .price-item_right {
+    margin-top: 25px;
+  }
+  .price-item_right .content {
+    padding: 20px 10px;
+    
+  }
+  .about {
+    position: relative;
+    z-index: 3;
+    background: #fff;
+    padding: 50px 0;
+  }
+  .about-item .top {
+    margin-bottom: 25px;
+  }
+  .about-content p {
+    font-size: 15px;
+  }
+  .about-content .img {
+    margin-bottom: 14px;
+  }
+  .about-img img {
+    margin-left: 0;
+    width: 100%;
+  }
+  .registration {
+    padding: 20px 10px;
+  }
+  .registration span {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer-list {
+    margin-top: 20px;
+    li {
+      margin: 12px 0;
+      display: block;
+    }
+  }
+  .rezart-logo {
+    float: none;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .container {
+    max-width: 465px;
+}
+  .new_scholl-item p {
+    font-size: 15px;
+  }
 }

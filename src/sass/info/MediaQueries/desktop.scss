@@ -3,7 +3,9 @@
 @media #{$desktop} {
     @import '../desktop';
     & {
-	  
+	  .team-carousel {
+        width: 95vw;
+      }
     }
 }
 

@@ -3,6 +3,29 @@
 @media #{$tabletPortrait} {
     @import '../mobile';
   	& {
-     
+      .header-location {
+        font-size: 22px;
+      }
+      .location {
+        .container {
+          max-width: 760px;
+        }
+        .h2-title {
+          text-align: left;
+        }
+        .location-img a {
+          left: -75px;
+        }
+      }
+      .schedule {
+        .container {
+          max-width: 570px;
+        }
+      }
+      .steps {
+        .container {
+          max-width: 769px;
+        }
+      }
 	}
 }
